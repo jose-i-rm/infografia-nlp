@@ -378,8 +378,10 @@ a { color: inherit; }
   overflow: hidden;
   border: 1px solid var(--c-border);
   background: var(--c-surface-2);
+  text-align: center;
 }
-.modal-figure img { width: 100%; height: auto; }
+/* Tamaño natural: no se amplían más allá de su resolución real (evita pixelado) */
+.modal-figure img { display: inline-block; width: auto; height: auto; max-width: 100%; }
 
 /* ---------- Textos de sección ---------- */
 .section-lead {
