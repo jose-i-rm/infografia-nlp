@@ -74,15 +74,15 @@ Construido íntegramente con **HTML5**, **CSS3** y **JavaScript puro**, es respo
 
 ## Funcionalidades clave
 
-- **Pipeline de NLP interactivo**: 5 pasos clicables que transforman una frase de ejemplo (tokenización, limpieza de *stopwords*, POS tagging, NER y vectorización).
+- **Infografía de fondo a pantalla completa**: todo el contenido cabe en la pantalla, sin necesidad de hacer scroll.
+- **Dock de 8 botones redondos** en el borde superior derecho, cada uno con su icono, color propio y **tooltip** con el título de la sección.
+- **Ventanas modales** que se despliegan sobre el fondo y combinan **imágenes** con las secciones interactivas ya construidas.
 - **Glosario con tooltips** para conceptos clave: tokens, lematización, categoría gramatical, NER y *embeddings*.
 - **Tarjetas de librerías desplegables** con descripción, fortalezas, limitaciones y ejemplo de código (NLTK, spaCy, Gensim) más una tabla comparativa.
 - **Sección de aplicaciones en salud**: historias clínicas, minería de literatura médica y chatbots de triaje, cada una con el valor que aportan.
 - **Mini-analizador de sentimiento** basado en palabras clave (demostración didáctica).
 - **Quiz** de 3 preguntas con puntuación, retroalimentación y reinicio.
-- **Contadores animados**, barra de progreso de lectura y animaciones al hacer *scroll*.
-- **Navegación responsive** con menú hamburguesa en móvil.
-- **Accesibilidad**: HTML semántico, atributos ARIA, navegación por teclado y soporte de `prefers-reduced-motion`.
+- **Accesibilidad**: HTML semántico, roles ARIA de diálogo, cierre con `Esc`, trampa de foco y soporte de `prefers-reduced-motion`.
 - **Sin dependencias de servidor**: sitio estático autocontenido en HTML/CSS/JS.
 
 ---
@@ -116,11 +116,12 @@ Construido íntegramente con **HTML5**, **CSS3** y **JavaScript puro**, es respo
 
 ```
 infografiaNLP/
-  index.html          # Estructura y contenido de la infografía
+  index.html          # Fondo a pantalla completa, dock de botones y modales
   css/
     styles.css        # Estilos, animaciones y diseño responsivo
   js/
-    main.js           # Lógica e interactividad (JavaScript puro)
+    main.js           # Lógica de modales e interactividad (JavaScript puro)
+  img/                # Infografía de fondo e imágenes de cada sección
   .gitignore
   README.md
 ```
