@@ -19,7 +19,7 @@
 
   /* ---------- Sistema de modales ---------- */
   function setupModals() {
-    const openers = $$(".dock-btn[data-modal]");
+    const openers = $$("[data-modal]");
     let lastFocused = null;
 
     const open = (id, trigger) => {

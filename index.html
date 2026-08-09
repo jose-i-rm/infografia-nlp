@@ -14,7 +14,16 @@
 <body>
   <!-- Lienzo principal: infografía de fondo a pantalla completa -->
   <main class="stage" id="stage">
-    <img class="stage-bg" src="img/infografiaNLP_Fondo.png" alt="Infografía sobre Procesamiento de Lenguaje Natural (NLP)" />
+    <div class="stage-frame">
+      <img class="stage-bg" src="img/infografiaNLP_Fondo.png" alt="Infografía sobre Procesamiento de Lenguaje Natural (NLP)" />
+
+      <!-- Botón de autores (sobre la franja azul, esquina inferior derecha) -->
+      <button class="authors-btn" data-modal="modal-autores" aria-haspopup="dialog">
+        <span class="authors-icon" aria-hidden="true">👥</span>
+        <span class="authors-tip">Autores</span>
+        <span class="sr-only">Autores</span>
+      </button>
+    </div>
 
     <!-- Dock de botones (parte superior derecha, en columna) -->
     <nav class="dock" aria-label="Secciones de la infografía">
@@ -412,6 +421,23 @@ print(modelo.wv.most_similar("fiebre"))</code></pre>
             <span class="quiz-score" id="quizScore">Puntuación: 0</span>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Autores -->
+  <div class="modal" id="modal-autores" role="dialog" aria-modal="true" aria-labelledby="t-autores" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-dialog modal-dialog--sm" role="document">
+      <header class="modal-head" style="--accent:#1565c0">
+        <h2 class="modal-title" id="t-autores"><span aria-hidden="true">👥</span> Autores</h2>
+        <button class="modal-close" data-close aria-label="Cerrar">✕</button>
+      </header>
+      <div class="modal-body">
+        <ul class="authors-list">
+          <li><span class="author-avatar" aria-hidden="true">👤</span> Jose Ignacio Ramirez Morales</li>
+          <li><span class="author-avatar" aria-hidden="true">👤</span> Geovanny Alfonso</li>
+        </ul>
       </div>
     </div>
   </div>
