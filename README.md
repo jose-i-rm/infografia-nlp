@@ -1,150 +1,197 @@
-# 🧠 Infografía Interactiva sobre Procesamiento de Lenguaje Natural (NLP)
+<h1 align="center">Infografía Interactiva NLP</h1>
 
-Proyecto web educativo que presenta, de forma visual e interactiva, los conceptos
-fundamentales del **Procesamiento de Lenguaje Natural (NLP)**, las principales
-librerías de Python del ecosistema (**NLTK**, **spaCy** y **Gensim**) y tres
-aplicaciones prácticas del NLP en el **sector salud**.
+<p align="center">
+  <strong>Infografía web interactiva sobre Procesamiento de Lenguaje Natural (NLP)</strong><br>
+  Conceptos básicos, librerías (NLTK, spaCy y Gensim) y aplicaciones prácticas en el sector salud.
+</p>
 
-Está construido íntegramente con **HTML5**, **CSS3** y **JavaScript puro**
-(sin frameworks ni dependencias externas), es **responsivo** y **accesible**.
+<p align="center">
+  <img src="https://img.shields.io/badge/status-en%20producci%C3%B3n-brightgreen?style=for-the-badge" alt="Estado">
+  <img src="https://img.shields.io/badge/deploy-GitHub%20Pages-222222?style=for-the-badge&logo=github&logoColor=white" alt="Deploy">
+  <img src="https://img.shields.io/badge/license-Educativa-lightgrey?style=for-the-badge" alt="Licencia">
+  <img src="https://img.shields.io/badge/idioma-ES-orange?style=for-the-badge" alt="Idioma">
+</p>
 
----
-
-## 🚀 Demo rápida
-
-Abre [`index.html`](index.html) en cualquier navegador moderno. No requiere
-instalación ni servidor. (Consulta la sección [Cómo ejecutar](#-cómo-ejecutar-y-visualizar-la-infografía)).
-
----
-
-## 🛠️ Tecnologías utilizadas
-
-| Tecnología | Uso en el proyecto |
-|-----------|--------------------|
-| **HTML5** | Estructura semántica del contenido (`header`, `nav`, `section`, `article`, `footer`), tablas accesibles y atributos ARIA. |
-| **CSS3**  | Diseño visual, variables CSS, *grid* y *flexbox*, animaciones y transiciones, efectos *hover*, tooltips, diseño responsivo con *media queries* y respeto a `prefers-reduced-motion`. |
-| **JavaScript (ES6+)** | Interactividad: menú móvil, barra de progreso, animaciones al hacer scroll (`IntersectionObserver`), contadores animados, *pipeline* interactivo, secciones desplegables, mini-analizador de sentimiento y quiz. |
-
-> Nota: los ejemplos de código que aparecen en la infografía usan **Python**, ya
-> que NLTK, spaCy y Gensim son librerías de Python. El sitio web en sí es 100 %
-> HTML/CSS/JS.
+<p align="center">
+  <a href="https://jose-i-rm.github.io/infografia-nlp/"><strong>🔗 Ver la infografía en vivo</strong></a>
+</p>
 
 ---
 
-## 📁 Estructura del proyecto
+## Tech Stack
+
+### Núcleo & Frontend
+
+<p>
+  <img src="https://img.shields.io/badge/HTML5-Sem%C3%A1ntico-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-Custom%20Properties-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-Vanilla%20ES6-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+</p>
+
+### Interactividad & UI
+
+<p>
+  <img src="https://img.shields.io/badge/IntersectionObserver-Reveal%20on%20scroll-4B5563?style=for-the-badge" alt="IntersectionObserver">
+  <img src="https://img.shields.io/badge/CSS%20Animations-Transiciones%20%26%20Keyframes-A855F7?style=for-the-badge" alt="CSS Animations">
+  <img src="https://img.shields.io/badge/Responsive-Mobile%20First-22D3EE?style=for-the-badge" alt="Responsive">
+  <img src="https://img.shields.io/badge/Accesibilidad-ARIA%20%26%20Teclado-2ea44f?style=for-the-badge" alt="Accesibilidad">
+</p>
+
+### Temática (librerías de NLP referenciadas)
+
+<p>
+  <img src="https://img.shields.io/badge/NLTK-Educaci%C3%B3n-4CAF50?style=for-the-badge&logo=python&logoColor=white" alt="NLTK">
+  <img src="https://img.shields.io/badge/spaCy-Producci%C3%B3n-09A3D5?style=for-the-badge&logo=spacy&logoColor=white" alt="spaCy">
+  <img src="https://img.shields.io/badge/Gensim-Sem%C3%A1ntica-FF7043?style=for-the-badge" alt="Gensim">
+</p>
+
+### Despliegue
+
+<p>
+  <img src="https://img.shields.io/badge/GitHub%20Pages-Hosting-222222?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Pages">
+  <img src="https://img.shields.io/badge/Git-Control%20de%20versiones-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+</p>
+
+---
+
+## Sobre el proyecto
+
+**Infografía Interactiva NLP** es un sitio web ligero, sin dependencias de build ni frameworks, que presenta de forma visual e interactiva los conceptos fundamentales del **Procesamiento de Lenguaje Natural (NLP)**. El usuario recorre desde qué es el NLP hasta cómo funciona su *pipeline*, pasando por las principales librerías de Python del ecosistema y tres aplicaciones reales en el **sector salud**.
+
+Construido íntegramente con **HTML5**, **CSS3** y **JavaScript puro**, es responsivo, accesible y funciona abriendo un único archivo en el navegador. Los ejemplos de código mostrados usan Python porque NLTK, spaCy y Gensim son librerías de Python; el sitio en sí es 100 % HTML/CSS/JS.
+
+### Contenido de la infografía
+
+| Elemento | Detalle |
+| --- | --- |
+| **Conceptos** | ¿Qué es el NLP?, comprensión (NLU) y generación (NLG). |
+| **Pipeline** | Tokenización → limpieza → POS → NER → vectorización (demo interactiva). |
+| **Librerías** | NLTK, spaCy y Gensim con ejemplos de código y tabla comparativa. |
+| **Industria** | 3 aplicaciones prácticas en el sector salud con su valor aportado. |
+| **Extras** | Glosario con tooltips, mini-analizador de sentimiento y quiz. |
+
+---
+
+## Funcionalidades clave
+
+- **Pipeline de NLP interactivo**: 5 pasos clicables que transforman una frase de ejemplo (tokenización, limpieza de *stopwords*, POS tagging, NER y vectorización).
+- **Glosario con tooltips** para conceptos clave: tokens, lematización, categoría gramatical, NER y *embeddings*.
+- **Tarjetas de librerías desplegables** con descripción, fortalezas, limitaciones y ejemplo de código (NLTK, spaCy, Gensim) más una tabla comparativa.
+- **Sección de aplicaciones en salud**: historias clínicas, minería de literatura médica y chatbots de triaje, cada una con el valor que aportan.
+- **Mini-analizador de sentimiento** basado en palabras clave (demostración didáctica).
+- **Quiz** de 3 preguntas con puntuación, retroalimentación y reinicio.
+- **Contadores animados**, barra de progreso de lectura y animaciones al hacer *scroll*.
+- **Navegación responsive** con menú hamburguesa en móvil.
+- **Accesibilidad**: HTML semántico, atributos ARIA, navegación por teclado y soporte de `prefers-reduced-motion`.
+- **Sin dependencias de servidor**: sitio estático autocontenido en HTML/CSS/JS.
+
+---
+
+## Arquitectura de alto nivel
+
+```
+┌──────────────────────────────────────────────────────────┐
+│                     Capa de Presentación                 │
+│   HTML5 semántico  ·  CSS3 (Custom Properties)  ·  UI     │
+├──────────────────────────────────────────────────────────┤
+│                       Capa de Interacción                │
+│   JavaScript (ES6)  ·  Pipeline interactivo  ·  Quiz      │
+│   Tooltips  ·  Sentimiento  ·  Menú  ·  Desplegables      │
+├──────────────────────────────────────────────────────────┤
+│                     Capa de Presentación Visual          │
+│   Animaciones CSS  ·  IntersectionObserver  ·  Reveal     │
+├──────────────────────────────────────────────────────────┤
+│                     Capa de Contenido                    │
+│   Conceptos NLP  ·  Librerías  ·  Aplicaciones (salud)    │
+├──────────────────────────────────────────────────────────┤
+│                          Servicios                       │
+│   Google Fonts (tipografías)                             │
+│   GitHub Pages (hosting estático)                        │
+└──────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Estructura del proyecto
 
 ```
 infografiaNLP/
-├── index.html        # Página principal con toda la infografía
-├── css/
-│   └── styles.css    # Estilos, animaciones y diseño responsivo
-├── js/
-│   └── main.js       # Lógica e interactividad (JavaScript puro)
-└── README.md         # Este archivo
+  index.html          # Estructura y contenido de la infografía
+  css/
+    styles.css        # Estilos, animaciones y diseño responsivo
+  js/
+    main.js           # Lógica e interactividad (JavaScript puro)
+  .gitignore
+  README.md
 ```
 
-El proyecto sigue una **estructura modular**: la presentación (HTML), el estilo
-(CSS) y el comportamiento (JS) están separados en archivos independientes.
+El proyecto sigue una **estructura modular**: la presentación (HTML), el estilo (CSS) y el comportamiento (JS) están separados en archivos independientes.
 
 ---
 
-## 📚 Conceptos básicos de NLP presentados
+## Puesta en marcha
 
-La infografía explica, con lenguaje comprensible para una audiencia general:
+### Local
 
-- **¿Qué es el NLP?** — La rama de la IA que permite a las máquinas comprender,
-  interpretar y generar lenguaje humano.
-- **Comprensión (NLU)** vs. **Generación (NLG)** del lenguaje.
-- **Pipeline de NLP** (demostración interactiva paso a paso):
-  1. **Tokenización** — dividir el texto en unidades mínimas (tokens).
-  2. **Limpieza** — eliminar *stopwords* (palabras vacías).
-  3. **Etiquetado gramatical (POS tagging)** — asignar la categoría gramatical.
-  4. **Reconocimiento de entidades (NER)** — detectar nombres, fechas, síntomas, etc.
-  5. **Vectorización / *embeddings*** — convertir el texto en números.
-- **Glosario interactivo** con *tooltips*: tokens, lematización, categoría
-  gramatical, NER y *embeddings*.
+Al ser una página estática no requiere instalación ni compilación. Basta con abrir o servir la carpeta:
+
+```powershell
+# Opción 1: abrir directamente
+Start-Process .\index.html
+
+# Opción 2: servidor local (recomendado)
+npx serve .
+
+# Opción 3: con Python
+python -m http.server 8000
+```
+
+> Con XAMPP, coloca la carpeta en `htdocs` y accede desde `http://localhost/pruebas/infografiaNLP/`.
+
+### Despliegue (GitHub Pages)
+
+El sitio se publica automáticamente desde la rama `main`. Para actualizarlo:
+
+```powershell
+git add .
+git commit -m "Descripción del cambio"
+git push
+```
+
+GitHub Pages reconstruye el sitio tras cada `push`.
 
 ---
 
-## 🧩 Librerías de NLP explicadas
+## Conceptos de NLP presentados
+
+- **¿Qué es el NLP?** — La rama de la IA que permite a las máquinas comprender, interpretar y generar lenguaje humano.
+- **NLU vs. NLG** — Comprensión frente a generación del lenguaje.
+- **Pipeline de NLP** — Tokenización, limpieza de *stopwords*, etiquetado gramatical (POS), reconocimiento de entidades (NER) y vectorización / *embeddings*.
+
+## Librerías explicadas
 
 | Librería | Enfoque | Fortalezas |
-|----------|---------|-----------|
-| **NLTK** (Natural Language Toolkit) | Educación e investigación | Gran cantidad de corpus y algoritmos clásicos; ideal para aprender. |
+| --- | --- | --- |
+| **NLTK** | Educación e investigación | Corpus y algoritmos clásicos; ideal para aprender. |
 | **spaCy** | NLP industrial / producción | Muy rápida; NER y análisis sintáctico listos para usar. |
 | **Gensim** | Semántica y modelado de tópicos | Word2Vec, Doc2Vec y LDA; eficiente con corpus enormes. |
 
-Cada librería incluye una descripción, sus fortalezas y limitaciones, y un
-**ejemplo de código desplegable**.
+## Aplicaciones en el sector salud
+
+1. **Análisis de historias clínicas** — Extrae diagnósticos, síntomas y medicamentos mediante NER. *Reduce el trabajo administrativo y los errores de codificación.*
+2. **Minería de literatura médica** — Modelado de tópicos para resumir y clasificar artículos científicos. *Mantiene al día a los profesionales con la evidencia reciente.*
+3. **Chatbots y triaje virtual** — Asistentes que entienden los síntomas del paciente (NLU). *Mejoran el acceso a la atención 24/7 y priorizan casos graves.*
 
 ---
 
-## 🏥 Aplicaciones prácticas seleccionadas — Industria: Salud
+## Enlaces
 
-Se eligió el **sector salud** por su gran volumen de texto no estructurado.
-Se presentan tres aplicaciones y el valor que aportan:
+| Recurso | URL |
+| --- | --- |
+| **Sitio en vivo** | https://jose-i-rm.github.io/infografia-nlp/ |
+| **Repositorio** | https://github.com/jose-i-rm/infografia-nlp |
 
-1. **Análisis de historias clínicas** — Extrae diagnósticos, síntomas y
-   medicamentos de notas médicas mediante NER.
-   *Valor:* reduce trabajo administrativo y errores de codificación.
-
-2. **Minería de literatura médica** — Modelado de tópicos (Gensim) para resumir
-   y clasificar miles de artículos científicos.
-   *Valor:* mantiene a los profesionales al día con la evidencia más reciente.
-
-3. **Chatbots y triaje virtual** — Asistentes que entienden los síntomas del
-   paciente (NLU) y orientan sobre la urgencia.
-   *Valor:* mejora el acceso a la atención 24/7 y prioriza casos graves.
-
-Además, se incluye un **mini-analizador de sentimiento** interactivo que estima
-el tono de un comentario sobre una consulta médica (demostración simplificada
-basada en palabras clave).
-
----
-
-## ✨ Elementos interactivos
-
-- Menú de navegación responsivo (hamburguesa en móvil).
-- Barra de progreso de lectura.
-- Animaciones de aparición al hacer *scroll*.
-- Contadores numéricos animados.
-- **Pipeline de NLP** clicable paso a paso.
-- **Tooltips** en el glosario de conceptos.
-- Secciones **desplegables** con ejemplos de código.
-- **Mini-analizador de sentimiento**.
-- **Quiz** de 3 preguntas con puntuación y reinicio.
-- Botón «volver arriba».
-
----
-
-## ▶️ Cómo ejecutar y visualizar la infografía
-
-### Opción 1 — Abrir directamente
-1. Descarga o clona el repositorio.
-2. Haz doble clic en `index.html` o ábrelo con tu navegador.
-
-### Opción 2 — Servidor local (recomendado)
-Con **VS Code** y la extensión *Live Server*: clic derecho en `index.html` →
-**"Open with Live Server"**.
-
-O con Python:
-```bash
-# Python 3
-python -m http.server 8000
-# Luego abre http://localhost:8000 en el navegador
-```
-
-O con Node.js:
-```bash
-npx serve .
-```
-
-> ✅ Compatible con navegadores modernos (Chrome, Firefox, Edge, Safari) en
-> escritorio y móvil.
-
----
-
-## 🔗 Recursos adicionales para profundizar en NLP
+### Recursos para profundizar en NLP
 
 - [Documentación de NLTK](https://www.nltk.org/)
 - [spaCy · Usage & Tutorials](https://spacy.io/usage)
@@ -155,17 +202,14 @@ npx serve .
 
 ---
 
-## 🎯 Objetivo educativo
+## Créditos & Fuentes
 
-Al explorar esta infografía, el estudiante:
-
-- Comprende los conceptos generales del NLP.
-- Se familiariza con las librerías **NLTK**, **spaCy** y **Gensim**.
-- Identifica cómo aplicar estas herramientas en proyectos básicos, entendiendo
-  sus capacidades y limitaciones en distintos contextos industriales.
+- Tipografías: **Google Fonts** (Poppins y Fira Code).
+- Contenido temático: elaboración propia con fines educativos.
+- Librerías referenciadas: **NLTK**, **spaCy** y **Gensim** (open source).
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 Proyecto educativo de uso libre con fines didácticos.
